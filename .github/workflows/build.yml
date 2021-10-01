@@ -18,12 +18,11 @@ jobs:
       uses: cflynn07/github-action-til-autoformat-readme@1.1.0
       with:
         description: |
-          A collection of concrete writeups of small things I learn daily while working
-          and researching. My goal is to work in public. I was inspired to start this
-          repository after reading Simon Wilson's [hacker new post][1], and he was
-          apparently inspired by Josh Branchaud's [TIL collection][2].
+          해당 저장소는 공부하고 배웠던 내용을 기록하는 공간입니다. 원래는 블로그에 적으려 했지만, 블로그는
+          정제된 내용을 올리는게 나 뿐만 아니라 다른 사람들이 보기에도 좋을 것이라 생각하기에 방향을 바꿔보려 합니다.
+          여기는 거의 막 적을 예정입니다. 감사합니다.
+          블로그를 보고 싶다면 [여기][1]를 클릭해주세요.
         footer: |
-          [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
-          [2]: https://github.com/jbranchaud/til
+          [1]: https://somefood.github.io
         list_most_recent: 2 # optional, lists most recent TILS below description
         date_format: "2020 Jan 15:04" # optional, must align to https://golang.org/pkg/time/#Time.Format
