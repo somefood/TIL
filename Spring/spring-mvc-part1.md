@@ -243,3 +243,45 @@ public class HelloServlet extends HttpServlet {
   - 내추럴 템플릿: HTML의 모양을 유지하면서 뷰 템플릿 적용 가능
   - 스프링 MVC와 강력한 기능 통합
   - **최선의 선택**, 단 성능은 프리마커, 벨로시티가 더 빠름
+
+## 서블릿 사용
+
+### HttpServletRequest 개요
+
+HttpServletRequest는 임시 저장소 기능을 가지고 있어서 HTTP 요청이 시작부터 끝날 때까지 유지가 된다.
+
+- 저장: request.setAttribute(name, value)
+- 조회: request.getAttribute(name)
+
+또한 세션 관리 기능이 있다.
+
+- request.getSession(create: true)
+
+HttpServletRequest, HttpServletResponse를 사용할 때 가장 중요한 점은 이 객체들이 HTTP 요청 메시지, 응답 메시지를 편리하게 사용하도록 도와주는 객체라는 점이다. 따라서 이 기능에 대해서 깊이있는 이해를 하려면 **HTTP 스펙이 제공하는 요청, 응답 메시지 자체를 이해**해야 한다.
+
+### HTTP 요청 데이터 - 개요
+
+HTTP 요청 메시지를 통해 클라이언트에서 서버로 데이터를 전달하는 방법 3가지를 살펴보자.
+
+- GET - 쿼리 파라미터
+  - /url?username=hello&age=20
+  - 메시지 바디 없이, URL의 쿼리 파라미터에 데이터를 포함해서 전달
+  - 예) 검색, 필터, 페이징ㄷ등에서 많이 사용
+- POST - HTML Form
+  - content-type: application/x-www-form-urlencoded
+  - 메시지 바디에 쿼리 파라미터 형식으로 전달 username=hello&age=20
+  - 예) 회원 가입, 상품 주문, HTML Form 사용
+- HTTP messagebody에 데이터를 직접 담아서 요청
+  - HTTP API에서 주로 사용, JSON, XML, TEXT
+  - 데이터 형식은 주로 JSON 사용
+  - POST, PUT, PATCH
+
+### HTTP 요청 데이터 - POST HTML Form
+
+POST의 경우에는 application/x-www-form-urlencoded 형식으로 보내는데 이것은 GET에서 살펴본 쿼리 파라미터 형식과 동일하다. 그렇기에 쿼리 파라미터 조회 메서드를 그대로 사용할 수 있다. 즉 request.getParmeter()를 동일하게 사용하여 확인할 수 있다.
+
+### HTTP 응답 데이터 - API JSON
+
+application/json은 스펙상 utf-8 형식을 사용하도록 정의되어 있다. 그렇기에 스펙에서 charset=utf-8과 같은 추가 파라미터를 지원하지 않는다. 따라서 application/json이라고만 사용해야지 application/json;charset=utf-8이라고 전달하는 것은 의미 없는 파라미터를 추가하는 것이다.
+
+response.getWriter()를 사용하면 추가 파라미터를 자동으로 추가해버린다. 이때는 response.getOutputStream()으로 출력하면 그런 문제가 없다.
