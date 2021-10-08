@@ -285,3 +285,11 @@ POST의 경우에는 application/x-www-form-urlencoded 형식으로 보내는데
 application/json은 스펙상 utf-8 형식을 사용하도록 정의되어 있다. 그렇기에 스펙에서 charset=utf-8과 같은 추가 파라미터를 지원하지 않는다. 따라서 application/json이라고만 사용해야지 application/json;charset=utf-8이라고 전달하는 것은 의미 없는 파라미터를 추가하는 것이다.
 
 response.getWriter()를 사용하면 추가 파라미터를 자동으로 추가해버린다. 이때는 response.getOutputStream()으로 출력하면 그런 문제가 없다.
+
+## 서블릿, JSP, MVC 패턴
+
+### 서블릿으로 회원 관리 웹 애플리케이션 만들기
+
+서블릿을 사용하면 HTML 파일을 만들 수는 있지만 자바 코드로 만드는 것이기에 많이 불편하다. 그렇기에 나나타는 것이 JSP인데 이 JSP도 사장되어 타임리프 등으로 많이 바뀌고 있다.
+
+> 크롬 개발자 도구에서 status가 회색이면 캐쉬된 내용을 가져온 것이다. 새로고침하면 검게 바뀐다.
