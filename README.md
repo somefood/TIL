@@ -9,14 +9,14 @@
 블로그를 보고 싶다면 [여기][1]를 클릭해주세요.
 
 
-_6 TILs and counting..._
+_7 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [---](Presentation/2021-11--11-github-action.md) - Sun Nov 14 11:08:44 2021 +0900
 - [스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 정리](Spring/spring-mvc-part1.md) - Thu Sep 30 23:50:11 2021 +0900
-- [자바 테스트](JAVA/test.md) - Wed Sep 29 15:26:45 2021 +0900
 
 ### Categories
 
@@ -31,6 +31,7 @@ _6 TILs and counting..._
 - [---](Presentation/2021-09-03-java-annotaion.md)
 - [---](Presentation/2021-09-18-restapi.md)
 - [---](Presentation/2021-10-08-http-method.md)
+- [---](Presentation/2021-11--11-github-action.md)
 - [---](Presentation/first.md)
 
 ### [Spring](#Spring)
