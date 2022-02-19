@@ -9,14 +9,14 @@
 블로그를 보고 싶다면 [여기][1]를 클릭해주세요.
 
 
-_8 TILs and counting..._
+_9 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [---](Presentation/2022-02-15-polymorphism.md) - Sat Feb 19 15:52:48 2022 +0900
 - [---](Presentation/2021-11-11-github-action.md) - Sun Nov 21 01:03:21 2021 +0900
-- [---](Presentation/2021-11-20-git.md) - Sun Nov 21 01:03:21 2021 +0900
 
 ### Categories
 
@@ -33,6 +33,7 @@ _8 TILs and counting..._
 - [---](Presentation/2021-10-08-http-method.md)
 - [---](Presentation/2021-11-11-github-action.md)
 - [---](Presentation/2021-11-20-git.md)
+- [---](Presentation/2022-02-15-polymorphism.md)
 - [---](Presentation/first.md)
 
 ### [Spring](#Spring)
